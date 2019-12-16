@@ -15,9 +15,9 @@ cc_library(
     srcs = ["trits.c"],
     hdrs = ["trits.h"],
     deps = [
+        "//mam:defs",
         "@org_iota_common//common:errors",
         "@org_iota_common//common/trinary:trit_long",
         "@org_iota_common//common/trinary:trit_tryte",
-        "//mam:defs",
     ],
 )

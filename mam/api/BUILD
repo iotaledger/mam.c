@@ -9,9 +9,9 @@ cc_library(
     deps = [
         ":trit_t_to_mam_msg_read_context_t_map",
         ":trit_t_to_mam_msg_write_context_t_map",
+        "//mam/mam:message",
         "@org_iota_common//common:errors",
         "@org_iota_common//common/model:bundle",
-        "//mam/mam:message",
         "@org_iota_common//utils:time",
     ],
 )

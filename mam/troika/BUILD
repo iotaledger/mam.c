@@ -5,10 +5,10 @@ cc_library(
     srcs = ["troika.c"],
     hdrs = ["troika.h"],
     deps = [
+        "//mam:defs",
+        "//mam/trits",
         "@org_iota_common//common:stdint",
         "@org_iota_common//common/crypto/ftroika",
         "@org_iota_common//common/crypto/troika",
-        "//mam:defs",
-        "//mam/trits",
     ],
 )

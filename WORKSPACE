@@ -28,13 +28,14 @@ git_repository(
     remote = "https://github.com/iotaledger/toolchains.git",
 )
 
-
 load("@rules_iota//:defs.bzl", "iota_deps")
+
 iota_deps()
 
 load("@iota_toolchains//:toolchains.bzl", "setup_initial_deps")
+
 setup_initial_deps()
 
 load("@iota_toolchains//:defs.bzl", "setup_toolchains_repositories")
-setup_toolchains_repositories()
 
+setup_toolchains_repositories()

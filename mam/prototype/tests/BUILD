@@ -5,8 +5,8 @@ cc_test(
     linkopts = ["-lpthread"],
     deps =
         [
-            "@org_iota_common//common/trinary:trit_tryte",
             "//mam/prototype:mam",
+            "@org_iota_common//common/trinary:trit_tryte",
             "@unity",
         ],
 )
@@ -17,8 +17,8 @@ cc_test(
     srcs = ["test_mask.c"],
     deps =
         [
-            "@org_iota_common//common/trinary:trit_tryte",
             "//mam/prototype:mask",
+            "@org_iota_common//common/trinary:trit_tryte",
             "@unity",
         ],
 )

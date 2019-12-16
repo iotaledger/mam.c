@@ -4,9 +4,9 @@ cc_test(
     srcs = ["test_psk.c"],
     visibility = ["//visibility:private"],
     deps = [
-        "@org_iota_common//common/trinary:trit_tryte",
         "//mam/psk",
         "//mam/psk:mam_psk_t_set",
+        "@org_iota_common//common/trinary:trit_tryte",
         "@unity",
     ],
 )

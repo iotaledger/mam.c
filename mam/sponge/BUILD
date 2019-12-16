@@ -5,12 +5,12 @@ cc_library(
     srcs = ["sponge.c"],
     hdrs = ["sponge.h"],
     deps = [
-        "@org_iota_common//common:errors",
-        "@org_iota_common//common/trinary:add",
         "//mam:defs",
         "//mam/trits",
         "//mam/trits:buffers",
         "//mam/troika",
+        "@org_iota_common//common:errors",
+        "@org_iota_common//common/trinary:add",
     ],
 )
 

@@ -44,10 +44,10 @@ cc_library(
     srcs = ["common.c"],
     hdrs = ["common.h"],
     deps = [
+        "//mam/api",
         "@org_iota_client//cclient/api",
         "@org_iota_common//common/trinary:trit_tryte",
         "@org_iota_common//common/trinary:tryte_ascii",
-        "//mam/api",
     ],
 )
 

@@ -58,3 +58,7 @@ mam_psk_t psk;
 mam_api_add_psk(&api, &psk);
 mam_psk_destroy(&psk);
 ```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/iotaledger/mam.c/blob/master/CONTRIBUTING.md) for details.

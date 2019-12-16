@@ -5,8 +5,8 @@ cc_library(
     srcs = ["pb3.c"],
     hdrs = ["pb3.h"],
     deps = [
+        "//mam/sponge:spongos",
         "@org_iota_common//common:errors",
         "@org_iota_common//common/trinary:trit_long",
-        "//mam/sponge:spongos",
     ],
 )

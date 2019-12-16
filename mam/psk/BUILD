@@ -5,9 +5,9 @@ cc_library(
     hdrs = ["psk.h"],
     visibility = ["//visibility:private"],
     deps = [
-        "@org_iota_common//common:errors",
         "//mam/prng",
         "//mam/trits",
+        "@org_iota_common//common:errors",
         "@org_iota_common//utils:memset_safe",
     ],
 )

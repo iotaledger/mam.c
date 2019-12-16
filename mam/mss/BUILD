@@ -33,8 +33,8 @@ cc_library(
     ],
     defines = ["MAM_MSS_TRAVERSAL"],
     deps = [
-        "@org_iota_common//common:errors",
         "//mam/wots",
+        "@org_iota_common//common:errors",
     ],
 )
 
@@ -50,7 +50,7 @@ cc_library(
         "mss_common.h",
     ],
     deps = [
-        "@org_iota_common//common:errors",
         "//mam/wots",
+        "@org_iota_common//common:errors",
     ],
 )
