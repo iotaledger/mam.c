@@ -6,7 +6,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 git_repository(
     name = "org_iota_common",
-    commit = "6ef2af84950f56c8489623e9672c4ac882bb3961",
+    commit = "f4959c5b4985135139bfe3e1ab44472e859d065f",
     remote = "git@github.com:iotaledger/iota_common.git",
 )
 
