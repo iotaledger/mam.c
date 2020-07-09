@@ -855,7 +855,7 @@ retcode_t mam_api_load(char const *const filename, mam_api_t *const api, tryte_t
   retcode_t ret = RC_OK;
   size_t trits_buffer_size = 0;
   trit_t *trits_buffer = NULL;
-  size_t bytes_size = 0;
+  long bytes_size = 0;
   byte_t *bytes = NULL;
   FILE *file = NULL;
 
@@ -869,6 +869,10 @@ retcode_t mam_api_load(char const *const filename, mam_api_t *const api, tryte_t
 
   fseek(file, 0, SEEK_END);
   bytes_size = ftell(file);
+  if (bytes_size == -1L) {
+    ret = RC_MAM_INVALID_ARGUMENT;
+    goto done; 
+  }
   fseek(file, 0, SEEK_SET);
 
   trits_buffer_size = bytes_size * NUMBER_OF_TRITS_IN_A_BYTE;
